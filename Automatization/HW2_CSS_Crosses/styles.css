@@ -1,0 +1,125 @@
+body {
+    background-image: url("pic/map.jpg");
+    margin: 50px;
+    background-repeat: repeat;
+}
+
+div {
+    text-align: center;
+}
+
+table {
+    border-spacing: 6px;
+    text-align: center;
+    display: inline-block;
+    background-image: url("pic/fon.jpg");
+    background-repeat: round;
+}
+
+td {
+    font-size: 45px;
+    font-style: italic;
+    font-family: Verdana, Geneva, sans-serif;
+    color: cornsilk;
+    text-align: center;
+    width: 14px;
+    -webkit-text-stroke: 0.04em #16009e;
+}
+
+blockquote {
+    border: 2px solid #006440;
+    background-color: rgb(222, 184, 135);
+    font-family: monospace;
+    font-size: 20px;
+    font-style: italic;
+    opacity: 90%;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+h1 {
+    background-color: rgba(222, 184, 135, 0);
+
+    font-family: monospace;
+    font-size: 23px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+p {
+    background-color: rgba(222, 184, 135, 0.8);
+    opacity: 90%;
+    font-family: monospace;
+    text-align: left;
+    font-size: 19px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #0040a1;
+}
+
+form {
+    border: 2px solid #006440;
+    background-color: rgba(222, 184, 135, 0.89);
+}
+
+.tabHead {
+    height: 37px;
+    color: crimson;
+    font-size: 21px;
+    background-color: cornsilk;
+    opacity: 80%;
+}
+
+.backgroundOfPage {
+    background-image: url("pic/map.jpg");
+    opacity: 73%;
+    margin: 50px;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 1100px;
+}
+
+.simbols {
+    height: 24px;
+    text-align: center;
+}
+
+.rowSpaces {
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 30%;
+}
+
+.rowLines {
+    height: 22px;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 50%;
+    font-size: 18px;
+}
+
+.choosingCell {
+    font-size: 45px;
+    font-style: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 255, 43, 0);
+    -webkit-text-stroke: 0.06em #16009e;
+    value: ♥;
+}
+
+.buttonGladToSeeYou {
+    margin: 10px;
+    height: 40px;
+}
+
+.choosingAI {
+    height: 40px;
+}
+
+#userNameForm {
+    width: 300px;
+    height: 33px;
+    font-size: 15px;
+    text-align: center;
+    background-color: cornsilk;
+}
