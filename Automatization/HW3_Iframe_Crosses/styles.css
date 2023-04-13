@@ -1,0 +1,225 @@
+body {
+    background-image: url("pic/map.jpg");
+    margin: 50px;
+    background-repeat: repeat;
+}
+
+div {
+    text-align: center;
+    width: 450px;
+    margin-left: 150px;
+}
+
+table {
+    border-spacing: 5px;
+    text-align: center;
+    display: inline-block;
+    background-image: url("pic/fon.jpg");
+    background-repeat: round;
+    border: 10px;
+    width: 256px;
+    margin-top: 12px;
+    margin-left: 377px;
+}
+
+td {
+    font-size: 45px;
+    font-style: italic;
+    font-family: Verdana, Geneva, sans-serif;
+    color: cornsilk;
+    text-align: center;
+    width: 14px;
+    -webkit-text-stroke: 0.04em #16009e;
+}
+
+blockquote {
+    border: 2px solid #006440;
+    border-radius: 20px;
+    background-image: url("pic/paper.jpg");
+    font-family: monospace;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 99%;
+    margin: -95px 0px 33px 429px;
+    width: 493px;
+}
+
+h1 {
+    background-color: rgba(222, 184, 135, 0);
+    font-family: monospace;
+    font-size: 23px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+p {
+    opacity: 90%;
+    font-family: monospace;
+    text-align: left;
+    font-size: 19px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #0040a1;
+    margin-left: 20px;
+}
+
+form {
+    border: 2px solid #006440;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-image: url("pic/paper.jpg");
+}
+
+.tabHead {
+    height: 37px;
+    color: rgba(250, 244, 0, 0.95);
+    font-size: 23px;
+    background-color: cornsilk;
+    opacity: 85%;
+}
+
+.backgroundOfPage {
+    background-image: url("pic/map.jpg");
+    opacity: 73%;
+    margin: 50px;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 1100px;
+}
+
+.simbolsOnTextField {
+    height: 25px;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.rowSpaces {
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 30%;
+}
+
+.rowLines {
+    height: 22px;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 50%;
+    font-size: 18px;
+}
+
+.choosingCell {
+    font-size: 45px;
+    font-style: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 255, 43, 0);
+    -webkit-text-stroke: 0.06em #16009e;
+}
+
+.buttonGladToSeeYou {
+    height: 40px;
+    margin-left: 66px;
+    margin-top: 8px;
+}
+
+.choosingAI {
+    height: 40px;
+    margin-left: 38px;
+    margin-top: 6px;
+}
+
+.shadowText {
+    text-shadow: 1px 1px 2px black;
+}
+
+.centering {
+    margin-left: 250px;
+}
+
+.welcomeField {
+    width: 350px;
+    margin-left: 6px;
+    margin-top: -250px;
+}
+
+.rightCorner {
+    margin-top: 10px;
+    margin-left: 49x;
+}
+
+.radioField {
+    width: 260px;
+    margin-left: 375px;
+    margin-top: -358px;
+}
+
+.checkboxField {
+    width: 420px;
+    margin-left: 655px;
+    margin-top: -17px;
+}
+.secondVideo {
+    width: 420px;
+    height: 214px;
+    margin-left: 655px;
+    margin-top: 20px;
+}
+.firstVideo {
+
+    margin-left: 641px;
+    margin-top: -293px;
+}
+
+.calculator {
+    margin-left: -45px;
+    margin-top: -370px;
+}
+
+.searchBar {
+    margin-left: -397px;
+    margin-top: 4px;
+    overflow: hidden;
+    height: 35px;
+    width: 305px;
+}
+
+.orderList {
+    border: 2px solid #006440;
+    border-radius: 20px;
+    background-image: url("pic/paper.jpg");
+    height: auto;
+    width: 253px;
+    background-color: rgba(222, 184, 135, 0);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(255, 0, 0);
+    text-align: left;
+    margin-left: 377px;
+    margin-top: -165px;
+}
+
+#userNameForm {
+    width: 201px;
+    height: 33px;
+    font-size: 15px;
+    text-align: center;
+    background-color: cornsilk;
+}
+
+#hederOfleader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.volumeCSV {
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 310px;
+}
+
+.buttonClearName {
+    height: 40px;
+    margin-top: 2px;
+}
