@@ -17,7 +17,7 @@
       "id": "23bbbbc9-37e0-4c1b-9bdf-333fa36969fe",
       "comment": "Установка размера окна",
       "command": "setWindowSize",
-      "target": "1418x939",
+      "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
