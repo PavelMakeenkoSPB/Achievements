@@ -1,0 +1,222 @@
+{
+  "id": "20ee6c49-8d49-4c13-8ef3-84ada46a5b9a",
+  "version": "2.0",
+  "name": "World of",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "4a8bdec8-e383-46ca-bd93-2aac6342742d",
+    "name": "Checking Results Of Search  World Of Tanks on Google",
+    "commands": [{
+      "id": "7c5b12e0-d5d0-4fc7-beea-6a2a3b508352",
+      "comment": "Загрузка страницы",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23bbbbc9-37e0-4c1b-9bdf-333fa36969fe",
+      "comment": "Установка размера окна",
+      "command": "setWindowSize",
+      "target": "800x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e35c8d83-900d-41b4-8a03-f6964014a24e",
+      "comment": "Клик в строку Поиска",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d0df444-0283-4b83-824f-da0668916f91",
+      "comment": "Ввод запроса \"World of Tanks \"",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "world of tanks"
+    }, {
+      "id": "2e850bc1-bf52-4c5d-b981-3048a185a43a",
+      "comment": "Нажатие кнопки Поиск",
+      "command": "click",
+      "target": "name=btnK",
+      "targets": [
+        ["name=btnK", "name"],
+        ["css=center:nth-child(2) > .gNO89b", "css:finder"],
+        ["xpath=//input[@name='btnK']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d806b21f-39b8-48d8-a925-52d963cdffaa",
+      "comment": "Клик в строку Поиска",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div/div/div[2]/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b83fcee9-487c-4acf-a085-fe7ddef587c4",
+      "comment": "Очистка поля ввода",
+      "command": "click",
+      "target": "css=.ExCKkf > svg",
+      "targets": [
+        ["css=.ExCKkf > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f86b3203-1ee8-4e94-b529-12b68cb73090",
+      "comment": "Ввод запроса \"world of t\"",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div/div/div[2]/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "world of t"
+    }, {
+      "id": "1d9862f3-f5e1-4158-b939-e992b8fa66e8",
+      "comment": "Наличие картинки в первом пункте списка",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='Alh6id']/div/div/ul/li/div/div",
+      "targets": [
+        ["css=.sbhl .sbic", "css:finder"],
+        ["xpath=//div[@id='Alh6id']/div/div/ul/li/div/div", "xpath:idRelative"],
+        ["xpath=//li/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9078a781-ac8c-416e-92a3-f7fe381c35b1",
+      "comment": "Подсчёт количества строк выпадающего меню",
+      "command": "storeXpathCount",
+      "target": "//*[@id=\"Alh6id\"]/div[1]/div/ul/li",
+      "targets": [],
+      "value": "amountOfRows"
+    }, {
+      "id": "ec39a70f-4480-42c2-a84f-a06a50444934",
+      "comment": "Вывод в консоль количества строк выпадающего меню (10) ",
+      "command": "echo",
+      "target": "Количество элементов ==>  ${amountOfRows}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1da5d8c-b9b0-4b52-8d86-c8a6c640d858",
+      "comment": "Проверка, что количество строк - 10",
+      "command": "assert",
+      "target": "amountOfRows",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "0454a665-15ee-465d-becc-bd25e62401ec",
+      "comment": "Получение количества подсказок",
+      "command": "storeXpathCount",
+      "target": "//div[@class=\"sbic sb43\"]",
+      "targets": [],
+      "value": "amountOfHints"
+    }, {
+      "id": "427d5834-2b5a-437a-977b-a7bdbcc5e661",
+      "comment": "Вывод в консоль количества подсказок(6)",
+      "command": "echo",
+      "target": "Количество элементов ==> ${amountOfHints}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d17ee01-c3c9-4f80-8de0-9c46b604763d",
+      "comment": "Проверка, что количество подсказок - 6",
+      "command": "assert",
+      "target": "amountOfHints",
+      "targets": [],
+      "value": "6"
+    }, {
+      "id": "3d1579a0-6e83-4d22-8edb-73c84011d93b",
+      "comment": "Наличие текста \"Онлайн-игра\"",
+      "command": "assertText",
+      "target": "xpath=//span[contains(.,'Онлайн-игра')]",
+      "targets": [
+        ["css=#Zrbbw > .ClJ9Yb > span", "css:finder"],
+        ["xpath=//div[@id='Zrbbw']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/div/div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Онлайн-игра')]", "xpath:innerText"]
+      ],
+      "value": "Онлайн-игра"
+    }, {
+      "id": "6f2e5e93-f08b-4338-bdbb-2c99326ecb47",
+      "comment": "Очистка поля ввода",
+      "command": "click",
+      "target": "css=.ExCKkf > svg",
+      "targets": [
+        ["css=.ExCKkf > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd390b07-4220-4bfe-9a49-a1f2079213bb",
+      "comment": "Ввод текста \"world of tanks\"",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [],
+      "value": "world of tanks"
+    }, {
+      "id": "f386cefe-6208-4996-8b06-19f9f97f47dd",
+      "comment": "Наличие текста \"world of tanks\" в первом пункте",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/div/span",
+      "targets": [
+        ["css=#jZ2SBf > .wM6W7d > span", "css:finder"],
+        ["xpath=//div[@id='jZ2SBf']/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'world of tanks')]", "xpath:innerText"]
+      ],
+      "value": "world of tanks"
+    }, {
+      "id": "f4283461-797f-49f4-b626-0cb54a76614b",
+      "comment": "Проверка наличия нужного текста в первом поисковом варианте",
+      "command": "assertText",
+      "target": "xpath=//h3[contains(.,'World of Tanks — Легендарная онлайн-игра про танки')]",
+      "targets": [
+        ["css=.eKjLze .LC20lb", "css:finder"],
+        ["xpath=//div[@id='kp-wp-tab-overview']/div/div/div/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'World of Tanks — Легендарная онлайн-игра про танки')]", "xpath:innerText"]
+      ],
+      "value": "World of Tanks — Легендарная онлайн-игра про танки"
+    }, {
+      "id": "12ee66f5-68d9-4cb8-855c-fa735771e702",
+      "comment": "Закрыть окно браузера",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3d954d36-060f-442d-8413-1da59b28f58d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
