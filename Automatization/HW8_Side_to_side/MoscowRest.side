@@ -1,0 +1,1208 @@
+{
+  "id": "aa46f377-c8bc-497e-9f08-faac909f2b22",
+  "version": "2.0",
+  "name": "MoscowRest",
+  "url": "https://www.moscow-restaurants.ru",
+  "tests": [{
+    "id": "c8f9ae86-911f-48f5-89a6-b24727d0ba27",
+    "name": "Открыть Ресторан с главной станцы",
+    "commands": [{
+      "id": "3b72448b-e4ff-4fe8-88de-cda884b155d9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa65a545-b7d8-44ff-8bba-1c6d8cbb9cc4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b48b0a0-bdd4-4ce4-ab2a-76e2fa3257b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рестораны",
+      "targets": [
+        ["linkText=Рестораны", "linkText"],
+        ["css=.g-outer:nth-child(2) .active > a", "css:finder"],
+        ["xpath=(//a[contains(@href, '/restaurants/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3621f033-ab17-4c39-a2c0-f13c2585bcad",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e74f24-de51-4518-bda4-8656b17784e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .fn",
+      "targets": [
+        ["css=li:nth-child(2) .fn", "css:finder"],
+        ["xpath=//li[2]/span/a/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6177b765-b6ad-4780-a6b3-c103d83b8f6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tab:nth-child(3)",
+      "targets": [
+        ["css=.tab:nth-child(3)", "css:finder"],
+        ["xpath=//div/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Комментарии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21eca500-9c0c-4040-914b-5018ea8ef251",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(2) .text",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(2) .text", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/ul/li[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3aaacbe4-0961-4d85-a910-3e2a5fcdf07f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6ec5caa3-e7a4-4fac-a199-c9c165856f3d",
+    "name": "Поиск ресторана",
+    "commands": [{
+      "id": "8d0327bf-4162-45d2-82b9-deae85773f5e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b4891cb-4990-4519-9899-427f1c716b9b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5f56e41-9eb2-44a0-bf0e-b8547cbb07b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d186011a-e0e3-45c7-892e-b737fcb767d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2687dba8-6f15-4d4b-baa4-30ea588d170b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Беляшерия"
+    }, {
+      "id": "6da4fa4c-18c7-4f58-ba4a-682dc1aa30ea",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8301afb8-c853-41d7-9077-fd5245dae632",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Беляшерия",
+      "targets": [
+        ["linkText=Беляшерия", "linkText"],
+        ["css=.item-search_result_col a", "css:finder"],
+        ["xpath=//a[contains(text(),'Беляшерия')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl/dd/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/restaurants/belyasheria.html')]", "xpath:href"],
+        ["xpath=//dd/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Беляшерия')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04f48a6a-bbfa-4353-9139-114442e01117",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Открыть в Яндекс-картах",
+      "targets": [
+        ["linkText=Открыть в Яндекс-картах", "linkText"],
+        ["css=.btn-on_map", "css:finder"],
+        ["xpath=//a[contains(@href, '/netcat/modules/default/redirect.php?u=http%3A%2F%2Fmaps.yandex.ru%2F%3Fll%3D37.532682%2C55.747885%26text%3D%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C+%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C+%D0%B4.1%26z%3D17%26l%3Dmap&h=85be2a23e6b961c8ca0b37b50079a778')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Открыть в Яндекс-картах')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4149",
+      "windowTimeout": 2000
+    }, {
+      "id": "8f154b0d-5301-420c-a553-83a580a30328",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e19725cb-1840-4c2f-80fb-ca7912b1d57c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4149}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97beb34b-a870-4182-942e-ffdf32e3b1cd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e2aaebc-607b-4fa6-8daf-76eb06e8989a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea2e0ce9-a620-4ec3-90e9-956707f33904",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aa647a7d-f080-46f6-a84e-4efed8595011",
+    "name": "Блюда",
+    "commands": [{
+      "id": "272e8b1a-ad1a-4092-9a93-128779cccab7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf6b0c7-77d9-4600-8051-83cf74ae6548",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ff41906-34eb-4d37-925e-3225d55d9146",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(2) .icon",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(2) .icon", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2caa99c7-b169-4e71-b798-e443f65e9f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .round-img-nosize",
+      "targets": [
+        ["css=li:nth-child(3) .round-img-nosize", "css:finder"],
+        ["xpath=//img[@alt='Хинкали']", "xpath:img"],
+        ["xpath=//li[3]/a/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4359eda0-2361-4f20-82ae-e214e1f6fcb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.data-dishes-content:nth-child(5) li:nth-child(16) .title",
+      "targets": [
+        ["css=.data-dishes-content:nth-child(5) li:nth-child(16) .title", "css:finder"],
+        ["xpath=//li[16]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9bf7f90-dd15-4c0a-81b2-5dd31fc21ea6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=читать целиком...",
+      "targets": [
+        ["linkText=читать целиком...", "linkText"],
+        ["css=.where > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'читать целиком...')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/restaurants/shafran.html')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'читать целиком...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df692ca4-b024-4eaf-a644-66d276182042",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e911189c-6c24-432b-ae37-736947ac785b",
+    "name": "Раздел Кто есть кто",
+    "commands": [{
+      "id": "00b6ff25-7fe2-42d5-b504-34437150b7bd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b32ce01-95d2-409d-923e-21bfe2106dcb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afe92ef1-d346-4ae1-ab4b-ae3a2fbaf686",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(3) .text",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(3) .text", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/ul/li[3]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a2f21a4-cfd0-41d5-bbd1-42350a3be318",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .title",
+      "targets": [
+        ["css=li:nth-child(3) .title", "css:finder"],
+        ["xpath=//li[3]/a/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71223cdc-b0eb-46c3-950c-be65de1dead9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=рестораны Андрея Деллоса",
+      "targets": [
+        ["linkText=рестораны Андрея Деллоса", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'рестораны Андрея Деллоса')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/?group=6')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'рестораны Андрея Деллоса')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93d74e4f-d93f-4128-aa7d-8b9233435133",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .vcard .img",
+      "targets": [
+        ["css=li:nth-child(2) > .vcard .img", "css:finder"],
+        ["xpath=//li[2]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "140de4bc-fbff-4925-bc63-1804e5c27d60",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,26)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "616945e0-9daa-447c-8473-29a964aaa46f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "98e43ec6-80e2-495d-b12a-bee6725bb88a",
+    "name": "Предложить Ресторан",
+    "commands": [{
+      "id": "263b1602-734a-4a73-9649-7ab5bd75249b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "105a2105-6ab6-45fc-b660-4e36121b5dc1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8e40033-4ce8-43cb-8acf-2f329f80543b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col_right:nth-child(4) > .offer:nth-child(2) span",
+      "targets": [
+        ["css=.col_right:nth-child(4) > .offer:nth-child(2) span", "css:finder"],
+        ["xpath=//div[3]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "657d802c-2766-47db-9382-e7bb687a1466",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(1) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(1) > input", "css:finder"],
+        ["xpath=(//input[@name='name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51aa41a6-f134-464a-81a6-eab4d9064e82",
+      "comment": "",
+      "command": "type",
+      "target": "css=#popup_offer li:nth-child(1) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(1) > input", "css:finder"],
+        ["xpath=(//input[@name='name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": "Шаверленд"
+    }, {
+      "id": "536968b5-6a8c-4e77-b772-845c6535fc0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(2) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='address'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adce5e1a-f9c9-4bf4-9574-44547257606c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(2) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='address'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a26472ff-4381-47e9-9813-82b3f0187328",
+      "comment": "",
+      "command": "type",
+      "target": "css=#popup_offer li:nth-child(2) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='address'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": "Воронцовский б-р 23"
+    }, {
+      "id": "00f05754-668f-4a89-afec-19c5a21ec2b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(3) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(3) > input", "css:finder"],
+        ["xpath=(//input[@name='comments'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c9f9803-408f-47a7-827e-f99b8a08d477",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(3) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(3) > input", "css:finder"],
+        ["xpath=(//input[@name='comments'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cfdf16f-3182-43c8-a305-0cc79bf944cb",
+      "comment": "",
+      "command": "type",
+      "target": "css=#popup_offer li:nth-child(3) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(3) > input", "css:finder"],
+        ["xpath=(//input[@name='comments'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[3]/input", "xpath:position"]
+      ],
+      "value": "тошниловка"
+    }, {
+      "id": "a3768e78-c43d-4dc0-ba69-ea1b4d37f771",
+      "comment": "",
+      "command": "click",
+      "target": "name=person",
+      "targets": [
+        ["name=person", "name"],
+        ["css=li:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='person']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "421d6e79-3cda-410f-8919-a3ad2fe21d60",
+      "comment": "",
+      "command": "type",
+      "target": "name=person",
+      "targets": [
+        ["name=person", "name"],
+        ["css=li:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='person']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "Ешон"
+    }, {
+      "id": "c683c56e-5c0e-413c-8fc2-614601a634e6",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=li:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08ce9034-7f52-493c-8f17-05ad7ce6b4fd",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=li:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": "ash@nl.com"
+    }, {
+      "id": "fbd9cc13-bfa3-4097-a5b7-014ee7ec63f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) .text-input",
+      "targets": [
+        ["css=li:nth-child(6) .text-input", "css:finder"],
+        ["xpath=(//input[@name='nc_captcha_code'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[6]/div/input", "xpath:idRelative"],
+        ["xpath=//li[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26990288-8533-4b61-9ecd-1c1565f0776e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4cdad8f0-ffc8-4b63-b902-c2a115f2c269",
+    "name": "Регистрация",
+    "commands": [{
+      "id": "62a9d311-090b-4091-9b6a-92053cfbb02c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85d8efd0-1fcd-40ed-bede-b2167fa5f393",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59b8e3b6-3313-4816-9cf7-d7f4000875db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col_right:nth-child(4) .btn-key > span",
+      "targets": [
+        ["css=.col_right:nth-child(4) .btn-key > span", "css:finder"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bad8c29-c059-4dd8-84c2-39cface03b46",
+      "comment": "",
+      "command": "click",
+      "target": "name=AUTH_USER",
+      "targets": [
+        ["name=AUTH_USER", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_USER']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98875f1c-3001-4efa-808b-cd7bca87cb26",
+      "comment": "",
+      "command": "type",
+      "target": "name=AUTH_USER",
+      "targets": [
+        ["name=AUTH_USER", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_USER']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": "qwe@cf.com"
+    }, {
+      "id": "93ace84e-fdbe-452e-b008-a32402074a52",
+      "comment": "",
+      "command": "click",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fca735d0-b68e-4da1-a817-cf9df05870e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "68cb1305-4a8d-42ac-90eb-ba9de7b28149",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(8) span",
+      "targets": [
+        ["css=div:nth-child(8) span", "css:finder"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Авторизоваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41a7b9b-11a6-4c1c-94c0-8a39e933f822",
+      "comment": "",
+      "command": "click",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.block:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a82f989-445f-4bbd-bc4c-0523a175e28b",
+      "comment": "",
+      "command": "type",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.block:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "17d41c99-1a7e-47f1-bb1f-8ab02a9b9ed7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.block:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6b58588c-5b11-4a7b-be0c-4134ccdfbd8f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "335fb660-e00e-408c-8dba-8a304880c5ce",
+    "name": "Раздел Подборки",
+    "commands": [{
+      "id": "53de0006-467a-47e8-9549-5b4b04d3f8d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "055694c6-5794-4715-a62b-680b45350249",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb634253-7c7a-4709-b04e-d1e36ca7016b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section_index:nth-child(3) .i-blue",
+      "targets": [
+        ["css=.section_index:nth-child(3) .i-blue", "css:finder"],
+        ["xpath=//div[3]/div/div/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0b62cdd-55a0-44ec-8370-dee3a0ae501b",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(24) > a",
+      "targets": [
+        ["css=li:nth-child(24) > a", "css:finder"],
+        ["xpath=//a[contains(@href, '/restaurants/zavtraki.html')]", "xpath:href"],
+        ["xpath=//li[24]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2151231c-956f-4fc2-a0f7-682cd4da784d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=7",
+      "targets": [
+        ["linkText=7", "linkText"],
+        ["css=.l-links > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'7')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/zavtraki.html?curPos=42')]", "xpath:href"],
+        ["xpath=//ul[3]/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98699e94-924c-43f8-89e4-65afcb021ddb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(10) .fn",
+      "targets": [
+        ["css=li:nth-child(10) .fn", "css:finder"],
+        ["xpath=//li[7]/span/a/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96b004aa-5957-4dae-b8ea-685308b3af95",
+      "comment": "Возвращение на главную",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb620ea3-cc28-408d-9716-9066577361ab",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6681d31c-3d7a-44c9-bfc5-84d67932aca5",
+    "name": "Случайное блюдо",
+    "commands": [{
+      "id": "6119f663-093b-45e8-a5a5-8332ad4c5a65",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d2448a4-245c-4b50-afa3-5afedcf2fe06",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a251734-1355-4c26-9abf-ed3dd002602d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.refresh",
+      "targets": [
+        ["css=.refresh", "css:finder"],
+        ["xpath=//div[6]/div/div/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3205c91-6e84-47ee-84eb-f884e2f3f21e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.refresh",
+      "targets": [
+        ["css=.refresh", "css:finder"],
+        ["xpath=//div[6]/div/div/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e727a85-3bf4-48d4-99be-c7e6ca6b9f50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.refresh",
+      "targets": [
+        ["css=.refresh", "css:finder"],
+        ["xpath=//div[6]/div/div/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73b788ef-6eaf-40ef-82b8-de6b1306803b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dishes > li:nth-child(4) img",
+      "targets": [
+        ["css=#dishes > li:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@alt='Черный лук']", "xpath:img"],
+        ["xpath=//ul[@id='dishes']/li[4]/a/span/img", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/ul/li[4]/a/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7461863-cb23-4b4b-8382-545569ab7df9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef5d579c-0a3c-41a5-8a88-4bcb65ff576b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "03f675d6-25f6-46b6-84b7-67ea2c5a03a9",
+    "name": "Поиск по метро",
+    "commands": [{
+      "id": "a4b75083-b7e2-472d-9c13-3f319ab2a716",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21cd1f1c-04ec-4f55-9d60-31b365b90464",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64adc9d2-eaff-4334-96ef-058e075454a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=География",
+      "targets": [
+        ["linkText=География", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'География')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/geo/')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'География')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e696015-651f-4244-bd3b-9e1155c52a13",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(19) .big-text",
+      "targets": [
+        ["css=li:nth-child(19) .big-text", "css:finder"],
+        ["xpath=//div[@id='nc-block-c732517d9160e2fe7b7d4111eaf31371']/div/div/div/div[2]/div/ul/li[19]/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[19]/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9f5a41e-3a58-4a2b-9f39-504591e3faf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .permalink:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1) .permalink:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(@href, '/restaurants/zolotaya_loshad.html')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c287b287-2522-4c5d-8f2e-065b2e45f412",
+      "comment": "",
+      "command": "click",
+      "target": "css=nobr > .link-next",
+      "targets": [
+        ["css=nobr > .link-next", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//nobr/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bad9716-b113-4646-a04e-bf365c0bc47f",
+      "comment": "",
+      "command": "click",
+      "target": "css=nobr > .link-next",
+      "targets": [
+        ["css=nobr > .link-next", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//nobr/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a935bed3-906c-4423-b7d0-5be8ff6f1832",
+      "comment": "",
+      "command": "click",
+      "target": "css=nobr > .link-next",
+      "targets": [
+        ["css=nobr > .link-next", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//nobr/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "485a9130-7faf-4b44-8438-8b901f7d0571",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f01e2ac0-a920-42cc-bfc5-b44626f832a9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3277f638-c886-4efc-9a4f-6d186cf9a9f0",
+    "name": "Серфинг по Меткам",
+    "commands": [{
+      "id": "48f679cb-6dca-45e4-9e81-cbf814769c1b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12893896-a25f-42bf-a163-896658ae7007",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "237c893a-ac48-450d-a3eb-8878f96b886f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новые рестораны",
+      "targets": [
+        ["linkText=Новые рестораны", "linkText"],
+        ["css=.copyright > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Новые рестораны')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/last.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новые рестораны')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbe91fe2-eea3-4f35-854a-3e58fae5e60f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сети",
+      "targets": [
+        ["linkText=Сети", "linkText"],
+        ["css=.copyright > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Сети')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/chain.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Сети')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5193abf2-5d81-48af-974e-c2e56603af95",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подборки",
+      "targets": [
+        ["linkText=Подборки", "linkText"],
+        ["css=.copyright > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Подборки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/tags.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Подборки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fae6a137-ba66-4625-8738-10dfc403dd78",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=География",
+      "targets": [
+        ["linkText=География", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'География')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/geo/')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'География')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe18c6ca-9130-4e3c-9923-ebb8b07241ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Реклама",
+      "targets": [
+        ["linkText=Реклама", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Реклама')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/about/advertising.html')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Реклама')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f22ab6ec-d80e-4815-8bdb-9ca941ded400",
+      "comment": "",
+      "command": "click",
+      "target": "css=.data-about",
+      "targets": [
+        ["css=.data-about", "css:finder"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d89c40-a1bb-4d4d-840b-2e39573c7a23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26ddbc42-11b7-428d-ac9a-79f0fa297704",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1d8df171-5515-42b1-b601-b3d9f977879b",
+    "name": "Рейтинги",
+    "commands": [{
+      "id": "93bdaeae-916a-4ed5-a0b4-180b871e2e98",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ac94819-32f4-40bd-bb18-ae0ed94043dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7b09da9-07fd-4683-b155-9ff17623803c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.l-rating:nth-child(2) .text",
+      "targets": [
+        ["css=.l-rating:nth-child(2) .text", "css:finder"],
+        ["xpath=//dl[2]/dd/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Magura Asian Bistro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f07d1f2d-09c1-44d0-996d-d847d58a7476",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e42ccd0-f004-4d42-a2b4-dd8b52d836e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=dd:nth-child(5) .text",
+      "targets": [
+        ["css=dd:nth-child(5) .text", "css:finder"],
+        ["xpath=//dd[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Вертели')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4a88405-92d0-4ba9-9e9b-735a736b705a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main_inner",
+      "targets": [
+        ["css=.main_inner", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38bba5bf-245f-4faf-bffb-6872a776dc8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec0ac56-4f1d-487b-88b0-3aff3baa3dc9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c262ec75-1d7e-483c-8cba-6e698c47390a",
+    "name": "Поиск блюда",
+    "commands": [{
+      "id": "c21b0665-5938-4e0d-a0b3-2a46a1a54970",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3683a73-9883-4460-87e1-76a4fe8e6295",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e39726-449f-424c-aff0-15de2aac806a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[4]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4ac2388-e90c-4d66-a757-5464b44452cd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Чебуреки"
+    }, {
+      "id": "380fefb2-c3b7-4118-9d8f-a3966bda3847",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Чебурек с ягненком в Узбекистан",
+      "targets": [
+        ["linkText=Чебурек с ягненком в Узбекистан", "linkText"],
+        ["css=.item-search_result_col > dd:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Чебурек с ягненком в Узбекистан')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl[3]/dd[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dishes/cheburek_s_yagnenkom_3787.html')]", "xpath:href"],
+        ["xpath=//dd[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Чебурек с ягненком в Узбекистан')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bf3cbe1-67d2-4c39-921b-f53cae1b9b02",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dd0608fa-883d-4ec2-85a8-c6b475c81f5a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c8f9ae86-911f-48f5-89a6-b24727d0ba27"]
+  }],
+  "urls": ["https://www.moscow-restaurants.ru/"],
+  "plugins": []
+}

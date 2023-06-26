@@ -1,0 +1,50 @@
+{
+  "id": "15ac61b1-ea41-4f00-8f54-955e77e1c634",
+  "version": "2.0",
+  "name": "Habr",
+  "url": "https://habr.com",
+  "tests": [{
+    "id": "1875f18b-3976-4343-b92f-ef5d37c15594",
+    "name": "Разработка",
+    "commands": [{
+      "id": "26738477-14bf-4b57-b732-6be79bac0fe2",
+      "comment": "",
+      "command": "open",
+      "target": "/ru/all/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9861e4a9-2e7e-4bb7-b535-d42fb2bcfc88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b572e951-2af6-499c-bd1f-c6be4ed6238e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Разработка",
+      "targets": [
+        ["linkText=Разработка", "linkText"],
+        ["css=.tm-main-menu__item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Разработка')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/nav/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/flows/develop/')]", "xpath:href"],
+        ["xpath=//nav/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Разработка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "745f777c-85d1-4350-96aa-50d0a409d704",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1875f18b-3976-4343-b92f-ef5d37c15594"]
+  }],
+  "urls": ["https://habr.com/"],
+  "plugins": []
+}

@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "77135197-2f58-43c3-9525-2487ad00381d",
+		"name": "Gmail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23581159",
+		"_collection_link": "https://planetary-firefly-849564.postman.co/workspace/My-Workspace~6da4c195-75ab-4f10-843e-7f485998f7f7/collection/23581159-77135197-2f58-43c3-9525-2487ad00381d?action=share&creator=23581159&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get Messages",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "ya29.a0AWY7Ckm_hi-VDjLAx99tF3jxL1z4I-dmv5Rk5pGcxwyIKp_piJvZr9lp5jGBWvZKLgsqag-hSL2jbj3pc8gp-OBmLVlooyXLr_RevZ43dJctBP-wC2LYZ9BYgcT-W6LguMFSlw2YENzhN5uJalBcC0xq7X2PaCgYKAXwSARASFQG1tDrprX5BDwImuKZqa1cJH9dPpg0163",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "413017854428-lcdps8dil0hmdg1cn5uct38kg0avqbqb.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/gmail.modify",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.google.com/o/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/auth",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://oauth.pstmn.io/v1/callback",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Gmail",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gmail.googleapis.com/gmail/v1/users/{{userId}}/messages/",
+					"protocol": "https",
+					"host": [
+						"gmail",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"gmail",
+						"v1",
+						"users",
+						"{{userId}}",
+						"messages",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "f75c9bd8-75cf-4f40-aa79-6961e7227585",
+  "version": "2.0",
+  "name": "Habr2",
+  "url": "https://habr.com",
+  "tests": [{
+    "id": "2ddbbb83-588b-4b6b-a9e5-cec458bcb284",
+    "name": "Научпоп",
+    "commands": [{
+      "id": "de1f7c9b-00ab-43de-aef4-3fb509778010",
+      "comment": "",
+      "command": "open",
+      "target": "/ru/all/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a63559c-420f-4e34-a1b4-21d17a0b31b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92c689ec-fd48-495a-ac82-06de312ba79a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Научпоп",
+      "targets": [
+        ["linkText=Научпоп", "linkText"],
+        ["css=.tm-main-menu__item:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'Научпоп')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/nav/a[7]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/flows/popsci/')]", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'Научпоп')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "50214a4c-961b-4399-bc96-184c608ef4e1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2ddbbb83-588b-4b6b-a9e5-cec458bcb284"]
+  }],
+  "urls": ["https://habr.com/"],
+  "plugins": []
+}

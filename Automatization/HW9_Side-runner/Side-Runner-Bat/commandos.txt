@@ -1,0 +1,15 @@
+set PATH=%PATH%;C:\temp\driver
+set PATH=%PATH%;C:\Users\Павел\AppData\Local\Programs\Opera
+
+npm install -g selenium-side-runner@3.17.0
+
+npm install -g chromedriver
+npm install -g edgedriver
+npm install -g geckodriver
+npm install -g opera
+
+
+selenium-side-runner -c "browserName=chrome" %sidePath%
+selenium-side-runner -c "browserName=firefox" %sidePath%
+selenium-side-runner -c "browserName=MicrosoftEdge" %sidePath%
+selenium-side-runner --c "browserName=opera" %sidePath%

@@ -1,0 +1,21 @@
+### OAuth 2.0 step 1 Получение кода
+GET https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=413017854428-lcdps8dil0hmdg1cn5uct38kg0avqbqb.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/gmail.readonly&state=1234zyx&redirect_uri=https://localhost
+
+
+### OAuth 2.0 step 2 Получение токена
+POST https://accounts.google.com/o/oauth2/token
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic NDEzMDE3ODU0NDI4LWxjZHBzOGRpbDBobWRnMWNuNXVjdDM4a2cwYXZxYnFiLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tOkdPQ1NQWC1Uc1J1RTVGLUs1WTgzckc5c0Y4S2F6UnJ0MzZ5
+
+grant_type=authorization_code&code=4/0AbUR2VNqIaM-8xMhZtO7c6ImEnnv8cKx8_ovPkRoqnY5I2vnnFc9bHxYfnuTXIoni0TlMw&redirect_uri=http://localhost
+
+### Получение списка писем
+GET https://gmail.googleapis.com/gmail/v1/users/pavelmakeenko178@gmail.com/messages/
+Accept: application/json
+Authorization: Bearer ya29.a0AWY7CklrkP633jMBEdk2mLFxaeXww_l4tedrhTQ5cT3FIbayu4NC2XZnjQT3HwUX9BAA_cmiZHSDvfBSbblujrpEGYYe2FWyVEaUDolRRBc17MFnGqajZjn-juf_sYJNq2yjVzKR35foZCzDGHiyMFqPXMYGaCgYKAd0SARASFQG1tDrpC-pW7CatwgmewdZ6yPD56Q0163
+
+### Чтение выбранного письма
+GET https://gmail.googleapis.com/gmail/v1/users/pavelmakeenko178@gmail.com/messages/188a60b9c35aeb90
+Accept: application/json
+Authorization: Bearer ya29.a0AWY7CklrkP633jMBEdk2mLFxaeXww_l4tedrhTQ5cT3FIbayu4NC2XZnjQT3HwUX9BAA_cmiZHSDvfBSbblujrpEGYYe2FWyVEaUDolRRBc17MFnGqajZjn-juf_sYJNq2yjVzKR35foZCzDGHiyMFqPXMYGaCgYKAd0SARASFQG1tDrpC-pW7CatwgmewdZ6yPD56Q0163
+###

@@ -1,0 +1,1041 @@
+{
+  "id": "75e4695e-e8b9-4b1f-b684-889a310f4c91",
+  "version": "2.0",
+  "name": "MSK_rest",
+  "url": "https://www.moscow-restaurants.ru/",
+  "tests": [{
+    "id": "89e2dcc4-2d3f-42f5-8313-1cb0a6cce2e6",
+    "name": "Поиск",
+    "commands": [{
+      "id": "c41977dd-787f-47aa-9268-80df0f3720c3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c3017f7-8052-4908-9d37-8a42f71f3cce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec3cff4b-97a5-4f74-b65f-fab4100544fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d09486-c355-4fa0-a7e6-7ab1a1390839",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "борщ"
+    }, {
+      "id": "0a4182ad-ea1a-44b1-ad80-0818b12b2afc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a9cda0e7-662b-4064-be41-136e43e97cc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Борщ с копченой уткой и чесночным багетом в Bird BQ",
+      "targets": [
+        ["linkText=Борщ с копченой уткой и чесночным багетом в Bird BQ", "linkText"],
+        ["css=dd:nth-child(20) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Борщ с копченой уткой и чесночным багетом в Bird BQ')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl[2]/dd[19]/s/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dishes/borsch_s_kopchenoy_utkoy_i_chesnochnym_bagetom_4316.html')]", "xpath:href"],
+        ["xpath=//dd[19]/s/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Борщ с копченой уткой и чесночным багетом в Bird BQ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "045fd242-7f83-4031-b6ef-4540d53e05be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3f33046-314a-4cdb-8029-80621309a1f3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "уха"
+    }, {
+      "id": "01fb2982-c8b0-436d-9f50-50c04eb6d777",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d71b7a65-15da-46ff-bc70-f152e66d0edf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Духан Алаверды",
+      "targets": [
+        ["linkText=Духан Алаверды", "linkText"],
+        ["css=.item-search_result_col:nth-child(1) > dd:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Духан Алаверды')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl/dd[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/restaurants/dukhan_alaverdy.html')]", "xpath:href"],
+        ["xpath=//dd[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Духан Алаверды')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd6fb799-a8a5-425d-9445-104ba09ec4cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f979eee-4f65-4a46-9e72-2b233df5bf80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-inner:nth-child(2)",
+      "targets": [
+        ["css=.g-inner:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d99385d5-a574-4fb4-b096-dc026bc6d628",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bdbc3f0-58f1-4617-b38b-1d64b3708b9e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "солянка"
+    }, {
+      "id": "0b5e7052-b42c-4dc6-9d15-2bed6eabf45d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bec851db-bb5d-4479-bad4-3aed873f5067",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Солянка сборная в Курорт",
+      "targets": [
+        ["linkText=Солянка сборная в Курорт", "linkText"],
+        ["css=dd:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Солянка сборная в Курорт')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl[2]/dd[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dishes/solyanka_sbornaya_13122.html')]", "xpath:href"],
+        ["xpath=//dd[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Солянка сборная в Курорт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "21c5ea8d-5844-4b83-9d48-5fe78d40405f",
+    "name": "рейтинг",
+    "commands": [{
+      "id": "21a00c28-c5a7-45b2-aaea-5f5a31c332b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35871543-16d2-48c1-81a1-c25255a3b6b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d8de76e-7c98-4a02-a9c6-73a67a8330f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(4) .text",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(4) .text", "css:finder"],
+        ["xpath=//body/div/div/div[2]/div/div/ul/li[4]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11606fc9-5d98-46d1-8eb1-cc3e994d7f83",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=обзоры ресторанов",
+      "targets": [
+        ["linkText=обзоры ресторанов", "linkText"],
+        ["css=p > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'обзоры ресторанов')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/restaurants/')])[3]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'обзоры ресторанов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c29b214-7025-43f0-876b-c9456eb95cb2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рейтинг",
+      "targets": [
+        ["linkText=Рейтинг", "linkText"],
+        ["css=.l-links:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рейтинг')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/rating.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рейтинг')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d147bff-ce64-4e4c-9119-8c9e8c563f66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selection-made",
+      "targets": [
+        ["css=.selection-made", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Выбрать кухню')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecb2e393-2ee0-46e8-b606-b02e9cdba61a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Авторская кухня",
+      "targets": [
+        ["linkText=Авторская кухня", "linkText"],
+        ["css=li:nth-child(5) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Авторская кухня')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/restaurants/rating.html?cuisine=1')])[2]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Авторская кухня')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32847527-66c9-4802-97ee-aeef24206d1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Лучшие",
+      "targets": [
+        ["linkText=Лучшие", "linkText"],
+        ["css=.l-links > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Лучшие')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/ofthemonth.html?cuisine=1')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Лучшие')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadb05aa-06ce-48f9-bf00-21ec04e67929",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selection-made",
+      "targets": [
+        ["css=.selection-made", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0279f9d6-9e07-4bc6-ad2e-261eb60c42e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2022",
+      "targets": [
+        ["linkText=2022", "linkText"],
+        ["css=li:nth-child(7) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'2022')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/ofthemonth.html?year=2022')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae13f6aa-ffab-4674-ae5e-db1ce6c1692c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .fn",
+      "targets": [
+        ["css=li:nth-child(3) .fn", "css:finder"],
+        ["xpath=//li[3]/span/a/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfddc0a-7554-4be0-acc7-2ed177b41135",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_2 > .text_2",
+      "targets": [
+        ["css=.logo-col_2 > .text_2", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8a96fe7-c952-4688-9058-0bdc27d057e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9390b5c9-1439-426a-8200-1a9be1862bd3",
+    "name": "Предложить ресторан",
+    "commands": [{
+      "id": "35e4a179-f643-45d5-8dc9-ecb3109cc5c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d66381b-bc80-435e-b3fe-f7f790d8ffd5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bdb4060-2b1c-491c-9093-9b2d434230d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col_right:nth-child(4) > .offer:nth-child(2) span",
+      "targets": [
+        ["css=.col_right:nth-child(4) > .offer:nth-child(2) span", "css:finder"],
+        ["xpath=//div[3]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85ed5ca7-90c5-40d0-b11d-50b17f37a813",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(1) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(1) > input", "css:finder"],
+        ["xpath=(//input[@name='name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6106a4a9-a9a8-4420-856e-577a4be21fcb",
+      "comment": "",
+      "command": "type",
+      "target": "css=#popup_offer li:nth-child(1) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(1) > input", "css:finder"],
+        ["xpath=(//input[@name='name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": "Шляпа Боярского"
+    }, {
+      "id": "45846645-b0c2-428f-a071-124a61b4ec9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(2) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='address'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de497989-ad5c-49fc-aba7-15245fd81738",
+      "comment": "",
+      "command": "type",
+      "target": "css=#popup_offer li:nth-child(2) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='address'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": "ул. ХЗ, д. 3"
+    }, {
+      "id": "c7ae7fc3-2278-4166-b2fb-1838c6576659",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer li:nth-child(3) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(3) > input", "css:finder"],
+        ["xpath=(//input[@name='comments'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5a8ac1b-8e66-4019-8fdd-750bdbc07bb5",
+      "comment": "",
+      "command": "type",
+      "target": "css=#popup_offer li:nth-child(3) > input",
+      "targets": [
+        ["css=#popup_offer li:nth-child(3) > input", "css:finder"],
+        ["xpath=(//input[@name='comments'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[3]/input", "xpath:position"]
+      ],
+      "value": "Жральня"
+    }, {
+      "id": "a1f222d9-68ab-40c1-a8a4-597d9b7191e5",
+      "comment": "",
+      "command": "click",
+      "target": "name=person",
+      "targets": [
+        ["name=person", "name"],
+        ["css=li:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='person']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "976ffec4-0b6a-4103-bba3-5de7fc4cfd32",
+      "comment": "",
+      "command": "type",
+      "target": "name=person",
+      "targets": [
+        ["name=person", "name"],
+        ["css=li:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='person']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "Вазген"
+    }, {
+      "id": "378938f7-6c4e-4f12-8bd8-5a3cc6bd97a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=li:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d69275e-3774-4133-87ac-f8fef297efc9",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=li:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": "zhradlo@ya.ru"
+    }, {
+      "id": "3da178ce-a73f-4097-8eb1-65eb4d4a91c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) .text-input",
+      "targets": [
+        ["css=li:nth-child(6) .text-input", "css:finder"],
+        ["xpath=(//input[@name='nc_captcha_code'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[6]/div/input", "xpath:idRelative"],
+        ["xpath=//li[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a51798af-4e5b-4180-a328-0d937168c74d",
+      "comment": "",
+      "command": "click",
+      "target": "id=nc_captcha_refresh_button0",
+      "targets": [
+        ["id=nc_captcha_refresh_button0", "id"],
+        ["css=#nc_captcha_refresh_button0", "css:finder"],
+        ["xpath=//button[@id='nc_captcha_refresh_button0']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[6]/div/button", "xpath:idRelative"],
+        ["xpath=//li[6]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6b8d661-1942-4767-80ef-ae0d408ad4ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=nc_captcha_refresh_button0",
+      "targets": [
+        ["id=nc_captcha_refresh_button0", "id"],
+        ["css=#nc_captcha_refresh_button0", "css:finder"],
+        ["xpath=//button[@id='nc_captcha_refresh_button0']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[6]/div/button", "xpath:idRelative"],
+        ["xpath=//li[6]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f8046c1-62de-42b2-8a1e-fc5ce09d8bfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) .text-input",
+      "targets": [
+        ["css=li:nth-child(6) .text-input", "css:finder"],
+        ["xpath=(//input[@name='nc_captcha_code'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[6]/div/input", "xpath:idRelative"],
+        ["xpath=//li[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "343f68f6-4aaa-4af6-8304-28a9efa4786d",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(6) .text-input",
+      "targets": [
+        ["css=li:nth-child(6) .text-input", "css:finder"],
+        ["xpath=(//input[@name='nc_captcha_code'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/ul/li[6]/div/input", "xpath:idRelative"],
+        ["xpath=//li[6]/div/input", "xpath:position"]
+      ],
+      "value": "MGNUY"
+    }, {
+      "id": "01313453-2375-4b02-a882-32472d25a375",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup_offer span",
+      "targets": [
+        ["css=#popup_offer span", "css:finder"],
+        ["xpath=//div[@id='popup_offer']/div[2]/form/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b7df8392-9b74-4a12-a0a7-9da91f3ee641",
+    "name": "Ресторанам",
+    "commands": [{
+      "id": "f96b436f-c10c-4245-bab3-3b4fdd4cee07",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68cd876a-42aa-46e4-bbf1-3684b925d7eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1757bdb6-7974-485b-bdca-78dd024d9303",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col_right:nth-child(4) .btn-key > span",
+      "targets": [
+        ["css=.col_right:nth-child(4) .btn-key > span", "css:finder"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d5a8ed5-c37d-48b1-89ba-b3e435ece7aa",
+      "comment": "",
+      "command": "click",
+      "target": "name=AUTH_USER",
+      "targets": [
+        ["name=AUTH_USER", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_USER']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "949ed68a-8af3-40a6-bed2-290a4a4bf689",
+      "comment": "",
+      "command": "type",
+      "target": "name=AUTH_USER",
+      "targets": [
+        ["name=AUTH_USER", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_USER']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li/input", "xpath:position"]
+      ],
+      "value": "vlad@zepesh.hu"
+    }, {
+      "id": "54dccc26-55e1-4fca-8c31-69635678720d",
+      "comment": "",
+      "command": "click",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f55d713c-7c18-4999-b171-d04581d75bd9",
+      "comment": "",
+      "command": "type",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.l-form:nth-child(7) > li:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": "blood2023"
+    }, {
+      "id": "dbb57903-27de-4ee4-8f60-fa25f08adb24",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(8) > .btn-base > span",
+      "targets": [
+        ["css=div:nth-child(8) > .btn-base > span", "css:finder"],
+        ["xpath=//div[@id='popup_auth']/div[2]/form/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/form/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Авторизоваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f5a0b5c-788b-492b-b2b2-1d6a74270129",
+      "comment": "",
+      "command": "click",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.block:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb527aa-566a-4f34-b16b-6743e8c7d0c2",
+      "comment": "",
+      "command": "type",
+      "target": "name=AUTH_PW",
+      "targets": [
+        ["name=AUTH_PW", "name"],
+        ["css=.block:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='AUTH_PW']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "blood2023"
+    }, {
+      "id": "13c15574-fb99-4d85-a29a-ef0ed0930275",
+      "comment": "",
+      "command": "click",
+      "target": "name=loginsave",
+      "targets": [
+        ["name=loginsave", "name"],
+        ["css=.block > input", "css:finder"],
+        ["xpath=//input[@name='loginsave']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcfb099b-4879-4d43-9627-0a2bd4a1f3d8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.login_submit", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78ec3511-e37b-441e-af29-204343544491",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.login_submit", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcd98f2b-eb08-4377-a89d-a1d9105c84c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=rem_pwd",
+      "targets": [
+        ["id=rem_pwd", "id"],
+        ["linkText=Забыли пароль?", "linkText"],
+        ["css=#rem_pwd", "css:finder"],
+        ["xpath=//a[contains(text(),'Забыли пароль?')]", "xpath:link"],
+        ["xpath=//a[@id='rem_pwd']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/netcat/modules/auth/password_recovery.php')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Забыли пароль?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fb4f116-b0c4-4a89-b127-243febf7eef5",
+      "comment": "",
+      "command": "click",
+      "target": "name=Login",
+      "targets": [
+        ["name=Login", "name"],
+        ["css=form:nth-child(3) > input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='Login']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d36565b1-d020-43db-8923-49d2dff04ea9",
+      "comment": "",
+      "command": "type",
+      "target": "name=Login",
+      "targets": [
+        ["name=Login", "name"],
+        ["css=form:nth-child(3) > input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='Login']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "vlad"
+    }, {
+      "id": "218465ca-770e-4838-9b67-69259a3c965f",
+      "comment": "",
+      "command": "click",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8190a06c-e6a2-419d-a147-053f5efda8d9",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "vlad@zepesu.hu"
+    }, {
+      "id": "d153d362-4e3e-4534-9342-b302080217d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@value='Восстановить пароль']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c3e0f43d-fda2-41b0-8a18-74938e73aa43",
+    "name": "Подписка",
+    "commands": [{
+      "id": "3a3c687f-c45c-4a62-b583-fdabbfd24759",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bbe1d5a-7865-41f5-af4c-023b3c020b3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba91d847-99ff-4b72-a4be-af0e731880f1",
+      "comment": "",
+      "command": "click",
+      "target": "name=f_Email",
+      "targets": [
+        ["name=f_Email", "name"],
+        ["css=.data input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='f_Email']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81602c24-da13-4d4c-b612-ebb1d352e42c",
+      "comment": "",
+      "command": "type",
+      "target": "name=f_Email",
+      "targets": [
+        ["name=f_Email", "name"],
+        ["css=.data input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='f_Email']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "ptg@bk.ru"
+    }, {
+      "id": "bd2881b3-b2d7-46ae-8c25-ef98137de0a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-base:nth-child(5)",
+      "targets": [
+        ["css=.btn-base:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Подписаться на обзоры')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3f9cc70-68b6-475c-b3cd-9148257e69eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вернуться в раздел",
+      "targets": [
+        ["linkText=Вернуться в раздел", "linkText"],
+        ["css=.main_inner > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться в раздел')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.moscow-restaurants.ru/settings/subscribe/')]", "xpath:href"],
+        ["xpath=//body/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться в раздел')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ebcb5949-79d0-43f2-9a33-2d1f7ed5d868",
+    "name": "Политика",
+    "commands": [{
+      "id": "ebd5f0b4-3a91-4e16-8a91-12e2e7b7f5c1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be8e717e-f523-4bda-899d-e55e666bb479",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd86dde1-2c95-49df-a055-34fff2e127d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Политика конфиденциальности",
+      "targets": [
+        ["linkText=Политика конфиденциальности", "linkText"],
+        ["css=a:nth-child(13)", "css:finder"],
+        ["xpath=//a[contains(text(),'Политика конфиденциальности')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/privacy/')]", "xpath:href"],
+        ["xpath=//a[8]", "xpath:position"],
+        ["xpath=//a[contains(.,'Политика конфиденциальности')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aeb68d3-04b0-434c-b705-b6e8a961716c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=статьей 29 Конституции РФ",
+      "targets": [
+        ["linkText=статьей 29 Конституции РФ", "linkText"],
+        ["css=a:nth-child(10)", "css:finder"],
+        ["xpath=//a[contains(text(),'статьей 29 Конституции РФ')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/netcat/modules/default/redirect.php?u=http%3A%2F%2Fconstitution.kremlin.ru&h=0c2ec21ea2b9d2dbfe777af5d036e0f1')]", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'статьей 29 Конституции РФ')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win743",
+      "windowTimeout": 2000
+    }, {
+      "id": "64b5f151-eae0-4f29-94b1-655d45af699e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5c4e518-5bb0-4276-b487-1d4d3b3c46aa",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win743}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8e31a57-3468-40bd-a338-09d2a65eeae4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f75b97df-7572-4887-b3e9-ddaa889a6749",
+    "name": "Блюда",
+    "commands": [{
+      "id": "d11b101d-0cb6-492a-9dcc-9ae24dc4b7cf",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b6b31b5-6db2-4051-80ef-0b489b1a82c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fc8184b-1707-43b6-bad4-0602a5d62976",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(2) .text",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(2) .text", "css:finder"],
+        ["xpath=//body/div/div/div[2]/div/div/ul/li[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11ef1266-a6e8-4902-a465-232fc4862c86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=10",
+      "targets": [
+        ["linkText=10", "linkText"],
+        ["css=.l-links > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'10')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dishes/?curPos=180')]", "xpath:href"],
+        ["xpath=//ul[2]/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2336604-1c9a-4ccb-a61b-2b07a6820d14",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=15",
+      "targets": [
+        ["linkText=15", "linkText"],
+        ["css=.l-links > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'15')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dishes/?curPos=280')]", "xpath:href"],
+        ["xpath=//ul[2]/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6a52c8e-68ce-4e5d-b7b8-3463deeb47ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=20",
+      "targets": [
+        ["linkText=20", "linkText"],
+        ["css=.l-links > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'20')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dishes/?curPos=380')]", "xpath:href"],
+        ["xpath=//ul[2]/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'20')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "913c30db-986b-42bc-b5f7-8cc73d1fc715",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рецепты",
+      "targets": [
+        ["linkText=Рецепты", "linkText"],
+        ["css=.l-links:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рецепты')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dishes/recipes.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рецепты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "358512aa-cc0d-4018-9136-279b9e93b4b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(58) .title",
+      "targets": [
+        ["css=li:nth-child(58) .title", "css:finder"],
+        ["xpath=//li[58]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Джамбалайя')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26cf9904-7f85-497a-8ba0-9972acc96712",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dcd34d39-2464-4378-b24b-49d6d8477e1c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.moscow-restaurants.ru/"],
+  "plugins": []
+}
